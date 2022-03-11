@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz App</title>
+    <link rel="stylesheet" href="app.css">
+    <script src="https://kit.fontawesome.com/05c9781d40.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <button class="start_button">Start Quiz</button>
+    <div class="info_box hide">
+        <div class="info-title"><span>About this Quiz</span></div>
+        <div class="info-list">
+            <div class="info"><span>1</span>. This Quiz is from <span class="sub">subject</span>, Chapter: <span
+                    class="chap">chapter</span>.</div>
+            <div class="info"><span>2</span>. The Quiz will contain <span class="num">x</span> MCQs.</div>
+            <div class="info"><span>3</span>. You will be allowed 45 mins to complete the quiz.</div>
+            <div class="info"><span>4</span>. You can't exit from the Quiz while you are attempting.</div>
+            <div class="info"><span>5</span>. You'll get points on the basis of your correct answers.</div>
+        </div>
+        <div class="buttons">
+            <button class="quit">Exit Quiz</button>
+            <button class="start">Continue</button>
+        </div>
+    </div>
+    <div class="quiz_box hide">
+        <div class="quiz">
+            <header>
+                <div class="title"></div>
+                <div class="timer">
+                    <div class="time_left_txt">Time Left</div>
+                    <div class="time">
+                        <span class="timer_min">45</span>:<span class="timer_sec">00</span>
+                    </div>
+                </div>
+                <div class="time_line"></div>
+            </header>
+            <section>
+                <div class="que_text"></div>
+                <div class="option_list"></div>
+            </section>
+            <footer>
+                <div class="total_que"></div>
+                <div>
+                    <button class="skip_btn">Skip</button>
+                    <button class="next_btn">Next</button>
+                </div>
+            </footer>
+        </div>
+        <div class="finish hide">Finish Attempt</div>
+        <div class="toggler">
+            <span>Jump to Question:</span>
+            <div class="t_buttons"></div>
+        </div>
+    </div>
+    <div class="result_box hide">
+        <div class="complete_text">You've completed the Quiz!</div>
+        <div class="icon">
+            <i class="fas fa-check-circle"></i>
+        </div>
+        <div class="mark_text">You answered <b>x</b> Questions</div>
+        <div class="skip_text">You skipped <b>x</b> Questions</div>
+        <p>To review your result click the Review Now button, or to Exit click the Quit button</p>
+        <div class="buttons">
+            <button class="review">Review Now!</button>
+            <button class="quit">Quit</button>
+        </div>
+    </div>
+    <script src="data.js"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>
